@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Maxim Baev</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -18,25 +18,35 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">maxaus</h3>
-      </div>
-
-      <div ng-view=""></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ng-href="#/"><img src="../images/m-letter.png" width="30" height="30" style="display: inline;"/> Maxim Baev</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="home" class="active"><a ng-href="#/">Home</a></li>
+            <li id="services"><a ng-href="#/services">Services</a></li>
+            <li id="results"><a ng-href="#/results">Results</a></li>
+            <li id="about"><a ng-href="#/about">About</a></li>
+            <li id="contact"><a ng-href="#/contact"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
-
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div ng-view=""></div>
+    </div>
+    <!--<div class="footer">-->
+      <!--<a href="http://angel.co/maxim-baev" target="_blank"><img src="../images/licon_angel.png"/><span class="text-muted">Maxim Baev</span></a>&nbsp; &copy; 2015-->
+    <!--</div>-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -72,8 +82,12 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/util.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/portfolio.js"></script>
+        <script src="scripts/controllers/services.js"></script>
         <!-- endbuild -->
 </body>
 </html>
