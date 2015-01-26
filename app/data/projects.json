@@ -1,14 +1,48 @@
 [
   {
+    "name": "louer",
+    "title": "Goods sharing system",
+    "description": "New version of French startup, allowing people to share (rent) any kind of goods (AngularJS application based on Jade templates integrated with Django backend), worked on the project from scratch in team with designer and backend developer, part of time leading another front-end developer.",
+    "images": [
+      "booking.png",
+      "dashboard.png",
+      "product_detail.png"
+    ],
+    "tags": [
+      "AngularJS",
+      "Heroku",
+      "jQuery",
+      "Twitter",
+      "Bootstrap",
+      "SASS",
+      "Responsive Design",
+      "Pivotal Tracker",
+      "PostGis",
+      "Grunt.js",
+      "Jade",
+      "Travis-Ci",
+      "Npm",
+      "Jasmine",
+      "Karma",
+      "Bower",
+      "Django",
+      "RESTFull Services"
+    ]
+  },
+  {
     "name": "calibrater",
     "title": "System for assessment of the med clinics",
     "description": "System for assessment of the med clinics, providing ability to make reports based on different metrics (scores, comments, etc.) for doctors or clinics. My role was building front-end for reporting system from scratch.",
     "images": [
-      "1.png"
+      "scorecard.png",
+      "all.png"
     ],
     "tags": [
       "ExtJs",
-      "JavaScript"
+      "jQuery",
+      "Python",
+      "Django",
+      "REST API"
     ]
   },
   {
@@ -16,12 +50,60 @@
     "title": "Remote educational platform",
     "description": "System for conversations between students and mentors. Added new cool features in the new chat systems in several projects of the customer related to remote education. Created test system with unit and end-to-end tests. Developed RESTFull web services on Node.js. Made research work and several test projects on data storage technologies like Riak and Firebase.",
     "images": [
-      "1.png",
-      "2.png"
+      "messages.png",
+      "profile.png"
     ],
     "tags": [
-      "Angular",
-      "JavaScript"
+      "Node.js",
+      "AngularJS",
+      "jQuery",
+      "Twitter Bootstrap",
+      "Amazon S3",
+      "NoSQL",
+      "Responsive Design",
+      "Firebase",
+      "Grunt.js",
+      "Riak",
+      "Yeoman",
+      "Jasmine"
+    ]
+  },
+  {
+    "name": "telecom",
+    "title": "Integration of telecom operator systems",
+    "description": "Development of products for one of the biggest French telecommunication operators, designing new and improving existing web services and applications. Took part in system integration process using TIBCO products. Worked on project as lead Java back-end developer.",
+    "images": [],
+    "tags": [
+      "Java",
+      "Restful Web Services",
+      "Oracle",
+      "JSF",
+      "EJB",
+      "JAX-RS",
+      "Soap Web Services"
+    ]
+  },
+  {
+    "name": "realtrans",
+    "title": "RealTrans",
+    "description": "Designed and developed several web applications for Altisource company. The main purpose of all applications was to simplify the process of making mortgage and other loans. I worked in big distributed international command (from Russia, India, Romania and USA), as senior developer, using Agile development process and Scrum technology.",
+    "images": [],
+    "tags": [
+      "Java",
+      "Restful Web Services",
+      "MySQL",
+      "Tomcat",
+      "Spring",
+      "Hibernate",
+      "ExtJS",
+      "JMS",
+      "jUnit",
+      "jMeter",
+      "Maven",
+      "Spring MVC",
+      "Drools",
+      "Activiti Bpm Platform",
+      "Mockito"
     ]
   },
   {
@@ -29,13 +111,67 @@
     "title": "Internet banking system",
     "description": "Development of new functionality for internet bank Faktura.ru, implementing custom services and UI design for client banks.",
     "images": [
-      "1.png",
-      "2.png",
-      "3.png"
+      "docs.png",
+      "pay.png",
+      "template.png"
     ],
     "tags": [
       "Java",
-      "JavaScript"
+      "jQuery",
+      "Spring",
+      "Oracle",
+      "Hibernate",
+      "Apache",
+      "Wicket"
+    ]
+  },
+  {
+    "name": "ocean",
+    "title": "Ocean numerical simulations representation",
+    "description": "System to represent numerical simulation results based on math model of different ocean events. My part was to completely develop front-end part of the project using Backbone.Marionette having Django API on back.",
+    "images": [
+      "catalog.png",
+      "viewer.png"
+    ],
+    "tags": [
+      "Backbone.js",
+      "jQuery",
+      "Compass",
+      "PostGis",
+      "Python/Django",
+      "RequireJS",
+      "RESTful JSON API"
+    ]
+  },
+  {
+    "name": "sharepoint",
+    "title": "Android Sharepoint client",
+    "description": "Simple Microsoft Sharepoint client for Android integrated with online Office365 system.",
+    "images": [
+      "3.jpg",
+      "4.jpg",
+      "5.jpg"
+    ],
+    "tags": [
+      "Restful Web Services",
+      "Android SDK",
+      "Json/Xml"
+    ]
+  },
+  {
+    "name": "casino",
+    "title": "Online casino games",
+    "description": "Online casino. Development of new game logic, integrating with Flex frontend.",
+    "images": [
+      "bingo.png",
+      "poker.png",
+      "roulette.png"
+    ],
+    "tags": [
+      "Javascript",
+      "Java",
+      "HTML",
+      "Flex"
     ]
   }
 ]

@@ -120,13 +120,19 @@ h1 {
 .jumbotron {
   text-align: center;
   color: $main-font-color;
-  background-color: rgba(20, 82, 149, 0.25);
+  width: 740px;
+  background-color: rgba(20, 82, 149, 0.45);
   p {
     font-size: 12pt;
   }
 
   a {
     color: #2c5596;
+  }
+
+  .badge {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   .conversation {
@@ -148,6 +154,13 @@ h1 {
   }
 }
 
+.avatar {
+  float: left;
+  margin: 7px 7px 7px 0;
+  width: 150px;
+  height: 150px;
+}
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
@@ -158,8 +171,10 @@ h1 {
 }
 
 .portfolio-thumbnail {
-  width: 480px;
+  width: 640px;
   height: 360px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -168,7 +183,7 @@ h1 {
 
 .rn-carousel-control {
   color: $main-font-color;
-  font-size: 21pt;
+  font-size: 17pt;
   font-weight: bold;
   width: 30px;
   height: 30px;
@@ -185,7 +200,7 @@ h1 {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 740px;
   }
 
   /* Remove the padding we set earlier */
