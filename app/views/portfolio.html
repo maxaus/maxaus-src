@@ -1,3 +1,15 @@
 <div class="jumbotron">
-  
+  <div  ng-repeat="project in projects track by $index">
+    <h3>{{project.title}}</h3>
+    <ul rn-carousel rn-carousel-controls style="height: 370px; width: 490px;" ng-if="project.images.length > 0">
+      <li ng-repeat="image in project.images track by $index">
+        <a href="{{'/images/portfolio/' + project.name + '/' + image}}" target="_blank"><img src="{{'/images/portfolio/' + project.name + '/' + image}}" class="portfolio-thumbnail"></a>
+      </li>
+    </ul>
+    <div>{{project.description}}</div>
+    <div>
+      <span class="badge" ng-repeat="tag in project.tags">{{tag}}</span>
+    </div>
+  </div>
+
 </div>

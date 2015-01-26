@@ -1,0 +1,41 @@
+[
+  {
+    "name": "calibrater",
+    "title": "System for assessment of the med clinics",
+    "description": "System for assessment of the med clinics, providing ability to make reports based on different metrics (scores, comments, etc.) for doctors or clinics. My role was building front-end for reporting system from scratch.",
+    "images": [
+      "1.png"
+    ],
+    "tags": [
+      "ExtJs",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "watu",
+    "title": "Remote educational platform",
+    "description": "System for conversations between students and mentors. Added new cool features in the new chat systems in several projects of the customer related to remote education. Created test system with unit and end-to-end tests. Developed RESTFull web services on Node.js. Made research work and several test projects on data storage technologies like Riak and Firebase.",
+    "images": [
+      "1.png",
+      "2.png"
+    ],
+    "tags": [
+      "Angular",
+      "JavaScript"
+    ]
+  },
+  {
+    "name": "faktura",
+    "title": "Internet banking system",
+    "description": "Development of new functionality for internet bank Faktura.ru, implementing custom services and UI design for client banks.",
+    "images": [
+      "1.png",
+      "2.png",
+      "3.png"
+    ],
+    "tags": [
+      "Java",
+      "JavaScript"
+    ]
+  }
+]
