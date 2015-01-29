@@ -90,6 +90,7 @@ body {
   height: 100%;
   padding-top: 70px;
   padding-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   /* Location of the image */
   background-image: url(../images/background_origin.jpg);
 
@@ -158,6 +159,14 @@ h2 {
   }
 }
 
+iframe {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  .ss-form-container {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   color: $main-font-color;
@@ -167,8 +176,16 @@ h2 {
   color: $main-font-color;
 }
 
+.navbar-default .navbar-brand:hover {
+  color: #c6d5f5;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: $main-font-color;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #c6d5f5;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > a:focus {

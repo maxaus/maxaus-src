@@ -5,8 +5,8 @@
     <h3>{{project.title}}</h3>
     <ul rn-carousel rn-carousel-controls ng-if="project.images.length > 0">
       <li ng-repeat="image in project.images track by $index">
-        <a href="{{'/images/portfolio/' + project.name + '/' + image}}" target="_blank"><img
-          src="{{'/images/portfolio/' + project.name + '/' + image}}" class="portfolio-thumbnail"></a>
+        <a href="{{'images/portfolio/' + project.name + '/' + image}}" target="_blank"><img
+          src="{{'images/portfolio/' + project.name + '/' + image}}" class="portfolio-thumbnail"></a>
       </li>
     </ul>
     <div class="text-justify">{{project.description}}</div>
