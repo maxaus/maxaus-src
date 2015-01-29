@@ -3,7 +3,7 @@ $main-font-color: #ffffff;
 $shadow_radius: 6px;
 $nose_size: 12px;
 $shadow: 0 5px $shadow_radius #B2B2B2;
-$border:  1px dotted #f3f3f3;
+$border: 1px dotted #f3f3f3;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -15,7 +15,7 @@ $border:  1px dotted #f3f3f3;
 }
 
 .bubble {
-//  background-color: #F2F2F2;
+  //  background-color: #F2F2F2;
   border-radius: 5px;
   border: $border;
   box-shadow: $shadow;
@@ -34,7 +34,7 @@ $border:  1px dotted #f3f3f3;
 
   &:before {
     border: $border;
-//    background-color: #F2F2F2;
+    //    background-color: #F2F2F2;
     box-shadow: $shadow;
     content: "\00a0";
 
@@ -115,7 +115,7 @@ body {
   body {
     /* The file size of this background image is 93% smaller
      * to improve page load speed on mobile internet connections */
-    background-image: url(../images/background_origin.jpg);
+    background-image: url(../images/background_small.jpg);
   }
 }
 
@@ -223,7 +223,7 @@ h2 {
   }
 
   .conversation {
-//    float: left;
+    //    float: left;
   }
 
   .description {
@@ -262,7 +262,6 @@ ul[rn-carousel] {
   width: 620px;
 }
 
-
 .rn-carousel-control {
   color: $main-font-color;
   font-size: 17pt;
@@ -276,7 +275,7 @@ ul[rn-carousel] {
 }
 
 .rn-carousel-control:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-thumbnail {
@@ -287,7 +286,16 @@ ul[rn-carousel] {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tech {
+  color: #f9c7b2;
+  font-weight: 600;
+}
+
+.badge {
+  background-color: #76B5B2;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -313,13 +321,40 @@ ul[rn-carousel] {
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-width: 640px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
 
   .jumbotron {
-    max-width: 320px;
+    max-width: 480px;
+  }
+
+  ul[rn-carousel] {
+    margin-left: 5px;
+    height: 255px;
+    width: 434px;
+  }
+
+  .portfolio-thumbnail {
+    width: 430px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .jumbotron {
+    max-width: 350px;
   }
 
   ul[rn-carousel] {
@@ -336,6 +371,6 @@ ul[rn-carousel] {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }

@@ -1,14 +1,17 @@
 <div class="jumbotron">
-  <div  ng-repeat="project in projects track by $index" class="row text-center">
+  <h4 class="text-justify">Here are some examples from my previous experience with short description:</h4>
+
+  <div ng-repeat="project in projects track by $index" class="row text-center">
     <h3>{{project.title}}</h3>
     <ul rn-carousel rn-carousel-controls ng-if="project.images.length > 0">
       <li ng-repeat="image in project.images track by $index">
-        <a href="{{'/images/portfolio/' + project.name + '/' + image}}" target="_blank"><img src="{{'/images/portfolio/' + project.name + '/' + image}}" class="portfolio-thumbnail"></a>
+        <a href="{{'/images/portfolio/' + project.name + '/' + image}}" target="_blank"><img
+          src="{{'/images/portfolio/' + project.name + '/' + image}}" class="portfolio-thumbnail"></a>
       </li>
     </ul>
     <div class="text-justify">{{project.description}}</div>
-    <div>
-      Technologies: <span class="badge" ng-repeat="tag in project.tags">{{tag}}</span>
+    <div class="text-left">
+      <span class="tech"><i class="fa fa-wrench"></i> Technologies:</span> <span class="badge" ng-repeat="tag in project.tags">{{tag}}</span>
     </div>
   </div>
 
