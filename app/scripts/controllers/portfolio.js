@@ -8,7 +8,6 @@ angular.module("maxausApp").controller("PortfolioCtrl", ["$scope", "ProjectsServ
   UtilsService.markListItemAsSelected("results");
 
   ProjectsService.getAll().then(function(result) {
-    console.log(result);
     $scope.projects = result;
   });
 

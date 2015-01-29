@@ -1,8 +1,82 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $main-font-color: #ffffff;
+$shadow_radius: 6px;
+$nose_size: 12px;
+$shadow: 0 5px $shadow_radius #B2B2B2;
+$border:  1px dotted #f3f3f3;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+.chat {
+  font-family: sans-serif;
+  font-size: small;
+  padding: 10px;
+}
+
+.bubble {
+//  background-color: #F2F2F2;
+  border-radius: 5px;
+  border: $border;
+  box-shadow: $shadow;
+  display: block;
+  padding: 10px 18px;
+  margin: 1em ($shadow_radius + $nose_size);
+  position: relative;
+  vertical-align: top;
+}
+
+.tail {
+  position: absolute;
+  height: ($shadow_radius + $nose_size);
+  width: ($shadow_radius + $nose_size);
+  overflow: hidden;
+
+  &:before {
+    border: $border;
+//    background-color: #F2F2F2;
+    box-shadow: $shadow;
+    content: "\00a0";
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: $nose_size;
+    width: $nose_size;
+  }
+}
+
+.bubble.left {
+  text-align: left;
+  margin-right: 20%;
+  .tail {
+    top: $nose_size;
+    left: -($shadow_radius + $nose_size);
+
+    &:before {
+      left: $nose_size;
+      -webkit-transform: skewX(-45deg);
+      -moz-transform: skewX(-45deg);
+      -o-transform: skewX(-45deg);
+    }
+  }
+}
+
+.bubble.right {
+  text-align: right;
+  margin-left: 20%;
+  .tail {
+    top: $nose_size;
+    right: -($shadow_radius + $nose_size);
+
+    &:before {
+      right: $nose_size;
+      -webkit-transform: skewX(45deg);
+      -moz-transform: skewX(45deg);
+      -o-transform: skewX(45deg);
+    }
+  }
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -46,16 +120,21 @@ body {
 }
 
 .question {
-  color: #f4f5ca
+  color: #c8d8ad
 }
 
-h1 {
-  color: #f4f5ca !important;
+h2 {
+  color: #c8d8ad !important;
 }
 
 .answer {
   color: #f4faff;
   font-size: 18pt;
+}
+
+.features {
+  background-color: #3A3E69 !important;
+  padding: 10px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -120,14 +199,14 @@ h1 {
 .jumbotron {
   text-align: center;
   color: $main-font-color;
-  width: 740px;
+  max-width: 740px;
   background-color: rgba(20, 82, 149, 0.45);
   p {
     font-size: 12pt;
   }
 
   a {
-    color: #2c5596;
+    color: #ebeff7;
   }
 
   .contact-links {
@@ -144,8 +223,7 @@ h1 {
   }
 
   .conversation {
-    float: left;
-    opacity: 0.4;
+//    float: left;
   }
 
   .description {
@@ -178,16 +256,12 @@ h1 {
   }
 }
 
-.portfolio-thumbnail {
-  width: 640px;
-  height: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ul[rn-carousel] {
+  margin-left: 15px;
+  height: 370px;
+  width: 620px;
 }
+
 
 .rn-carousel-control {
   color: $main-font-color;
@@ -202,6 +276,17 @@ h1 {
 }
 
 .rn-carousel-control:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.portfolio-thumbnail {
+  width: 610px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -225,5 +310,32 @@ h1 {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .jumbotron {
+    max-width: 320px;
+  }
+
+  ul[rn-carousel] {
+    margin-left: 5px;
+    height: 185px;
+    width: 310px;
+  }
+
+  .portfolio-thumbnail {
+    width: 305px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 }
